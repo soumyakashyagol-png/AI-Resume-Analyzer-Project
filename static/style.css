@@ -1,0 +1,80 @@
+body {
+    font-family: Arial;
+    background: #0f172a;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #38bdf8;
+}
+
+.form-box {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.score {
+    font-size: 40px;
+    text-align: center;
+    color: #22c55e;
+}
+
+.required h2 { color: #60a5fa; }
+.matching h2 { color: #22c55e; }
+.missing h2 { color: #ef4444; }
+.suggestion h2 { color: #facc15; }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #334155;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 6px;
+}

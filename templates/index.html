@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🤖 AI Resume Analyzer</h1>
+
+    <form method="POST" enctype="multipart/form-data" class="form-box">
+
+        <label>📄 Upload Resume (PDF)</label>
+        <input type="file" name="resume" required>
+
+        <label>📝 Job Description</label>
+        <textarea name="job_description" required></textarea>
+
+        <button type="submit">🚀 Analyze Resume</button>
+    </form>
+
+    {% if score is not none %}
+
+    <div class="card score-card">
+        <h2>📊 ATS Score</h2>
+        <div class="score">{{ score }}%</div>
+    </div>
+
+    <div class="card required">
+        <h2>📋 Required Skills</h2>
+        <ul>
+            {% for skill in required_skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="card matching">
+        <h2>✅ Matching Skills</h2>
+        <ul>
+            {% for skill in matching_skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="card missing">
+        <h2>❌ Missing Skills</h2>
+        <ul>
+            {% for skill in missing_skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="card suggestion">
+        <h2>💡 Suggestions</h2>
+        <ul>
+            {% for s in suggestions %}
+                <li>{{ s }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>📊 Skill Match Graph</h2>
+        <img src="{{ graph }}" width="100%">
+    </div>
+
+    <!-- PDF DOWNLOAD -->
+    <div class="card">
+        <h2>📄 ATS Report</h2>
+
+        <a href="{{ url_for('static', filename='ATS_Report.pdf') }}" download>
+            <button type="button">⬇ Download PDF Report</button>
+        </a>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
