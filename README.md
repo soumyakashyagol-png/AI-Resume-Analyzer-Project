@@ -2,18 +2,17 @@
 
 ## Overview
 
-The AI-Powered Resume Analyzer is a web application developed using Python and Flask that analyzes resumes against job descriptions using Natural Language Processing (NLP). It generates an ATS compatibility score, identifies matching and missing skills, provides intelligent resume insights, visualizes the analysis using Matplotlib, and allows users to download a detailed PDF report.
+AI-Powered Resume Analyzer is a web application developed using Python and Flask that analyzes resumes against job descriptions using Natural Language Processing (NLP). It generates an ATS compatibility score, identifies matching and missing skills, provides intelligent resume insights, visualizes results using Matplotlib, and allows users to download a detailed PDF report.
 
 ---
 
 ## Features
 
 - ATS Score Generation
-- Resume-Job Matching
+- Resume–Job Matching
 - Skill Extraction
 - Missing Skill Identification
 - AI-Powered Resume Analysis using NLP
-- Matching & Missing Skills Detection
 - Data Visualization using Matplotlib
 - Downloadable PDF ATS Report
 - User-Friendly Web Interface
@@ -39,7 +38,7 @@ The AI-Powered Resume Analyzer is a web application developed using Python and F
 2. Enter or paste the job description.
 3. The application extracts resume content using PyPDF2.
 4. NLP compares the resume with the job description.
-5. The system generates:
+5. The application generates:
    - ATS Score
    - Matching Skills
    - Missing Skills
@@ -51,9 +50,9 @@ The AI-Powered Resume Analyzer is a web application developed using Python and F
 
 ## Project Demo
 
-The complete project workflow, application interface, ATS analysis, skill matching, data visualizations, and downloadable PDF report are available here.
+The project demonstration includes the complete application workflow, ATS score generation, skill matching, visualizations, and downloadable PDF report.
 
-📄 **[AI Resume Analyzer Demo](AI_Resume_Analyzer_Demo.pdf)**
+📄 **[View Project Demo](AI_Resume_Analyzer_Demo.pdf)**
 
 ---
 
@@ -61,25 +60,32 @@ The complete project workflow, application interface, ATS analysis, skill matchi
 
 ```text
 AI-Resume-Analyzer-Project/
-│── static/
-│── templates/
-│── app.py
-│── README.md
-│── AI_Resume_Analyzer_Demo.pdf
+├── static/
+├── templates/
+├── app.py
+├── README.md
+└── AI_Resume_Analyzer_Demo.pdf
 ```
 
 ---
 
-## Installation
+## Running the Project
+
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/soumyakashyagol-png/AI-Resume-Analyzer-Project.git
-cd AI-Resume-Analyzer-Project
-pip install -r requirements.txt
+```
+
+2. Open the project folder.
+
+3. Run the application:
+
+```bash
 python app.py
 ```
 
-Open your browser and visit:
+4. Open your browser and visit:
 
 ```
 http://127.0.0.1:5000
@@ -100,5 +106,5 @@ http://127.0.0.1:5000
 
 **Soumya Kashyagol**
 
-- LinkedIn: https://linkedin.com/in/soumya-kashyagol-bab41b288
 - GitHub: https://github.com/soumyakashyagol-png
+- LinkedIn: https://linkedin.com/in/soumya-kashyagol-bab41b288
