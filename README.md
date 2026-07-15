@@ -1,9 +1,13 @@
 # AI-Powered Resume Analyzer
 
 ## Overview
-AI-Powered Resume Analyzer is a web application developed using Python and Flask that analyzes resumes against job descriptions. It helps job seekers evaluate their resumes by generating an ATS score, identifying matching and missing skills, and providing intelligent insights for improvement.
+
+The AI-Powered Resume Analyzer is a web application developed using Python and Flask that analyzes resumes against job descriptions using Natural Language Processing (NLP). It generates an ATS compatibility score, identifies matching and missing skills, provides intelligent resume insights, visualizes the analysis using Matplotlib, and allows users to download a detailed PDF report.
+
+---
 
 ## Features
+
 - ATS Score Generation
 - Resume-Job Matching
 - Skill Extraction
@@ -14,7 +18,10 @@ AI-Powered Resume Analyzer is a web application developed using Python and Flask
 - Downloadable PDF ATS Report
 - User-Friendly Web Interface
 
+---
+
 ## Technologies Used
+
 - Python
 - Flask
 - HTML
@@ -24,62 +31,73 @@ AI-Powered Resume Analyzer is a web application developed using Python and Flask
 - Scikit-learn
 - Matplotlib
 
+---
+
 ## How It Works
-1. Upload your resume (PDF).
+
+1. Upload a resume in PDF format.
 2. Enter or paste the job description.
-3. The application extracts resume content and compares it with the job description.
-4. It generates:
+3. The application extracts resume content using PyPDF2.
+4. NLP compares the resume with the job description.
+5. The system generates:
    - ATS Score
    - Matching Skills
    - Missing Skills
-   - Resume Analysis
+   - Resume Insights
    - Skill Visualization Graph
-5. Download the complete ATS Report as a PDF.
+6. Download the ATS Analysis Report as a PDF.
+
+---
+
+## Project Demo
+
+The complete project workflow, application interface, ATS analysis, skill matching, data visualizations, and downloadable PDF report are available below.
+
+📄 **[AI Resume Analyzer Demo](AI_Resume_Analyzer_Demo.pdf)**
+
+---
 
 ## Project Structure
-```
+
+```text
 AI-Resume-Analyzer-Project/
 │── static/
 │── templates/
 │── app.py
 │── requirements.txt
 │── README.md
+│── AI_Resume_Analyzer_Demo.pdf
 ```
+
+---
 
 ## Installation
-1. Clone the repository:
+
 ```bash
 git clone https://github.com/soumyakashyagol-png/AI-Resume-Analyzer-Project.git
-```
-
-2. Navigate to the project folder:
-```bash
 cd AI-Resume-Analyzer-Project
-```
-
-3. Install the required packages:
-```bash
 pip install -r requirements.txt
-```
-
-4. Run the application:
-```bash
 python app.py
 ```
 
-5. Open your browser and visit:
-```
+Open your browser and visit:
+
 http://127.0.0.1:5000
-```
+
+---
 
 ## Future Enhancements
-- AI-based resume improvement suggestions
-- Support for multiple resume formats
-- Advanced ATS compatibility analysis
-- Personalized career recommendations
-- Multi-language resume support
+
+- AI-based Resume Improvement Suggestions
+- Enhanced ATS Compatibility Analysis
+- Multi-language Resume Support
+- Personalized Career Recommendations
+
+---
 
 ## Author
+
 **Soumya Kashyagol**
 
-GitHub: https://github.com/soumyakashyagol-png
+- LinkedIn: https://linkedin.com/in/soumya-kashyagol-bab41b288
+- GitHub: https://github.com/soumyakashyagol-png
