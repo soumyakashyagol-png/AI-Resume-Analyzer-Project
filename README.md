@@ -51,7 +51,7 @@ The AI-Powered Resume Analyzer is a web application developed using Python and F
 
 ## Project Demo
 
-The complete project workflow, application interface, ATS analysis, skill matching, data visualizations, and downloadable PDF report are available below.
+The complete project workflow, application interface, ATS analysis, skill matching, data visualizations, and downloadable PDF report are available here.
 
 📄 **[AI Resume Analyzer Demo](AI_Resume_Analyzer_Demo.pdf)**
 
@@ -64,7 +64,6 @@ AI-Resume-Analyzer-Project/
 │── static/
 │── templates/
 │── app.py
-│── requirements.txt
 │── README.md
 │── AI_Resume_Analyzer_Demo.pdf
 ```
@@ -82,7 +81,9 @@ python app.py
 
 Open your browser and visit:
 
+```
 http://127.0.0.1:5000
+```
 
 ---
 
